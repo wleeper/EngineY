@@ -19,7 +19,7 @@ module WidgetsHelper
     open_link = '<a href="' + href + '">'
     image_tag = "<img id='widget_#{@layout.id}_collapse_img' src='/images/collapse.png'/>"
     close_tags = "</a></div>"
-    return open_div + open_link + image_tag + close_tags
+    return raw(open_div + open_link + image_tag + close_tags)
   end
   
 end
