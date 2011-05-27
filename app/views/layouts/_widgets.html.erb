@@ -11,7 +11,7 @@
 	}
 	page_data.widgets = new PageWidgets();
 	<% if layouts && layouts.length > 0 %>
-		page_data.widgets.init_widgets('<%= layouts.to_json(:methods => :widget_name) %>');
+		page_data.widgets.init_widgets('<%= layouts.to_json(:methods => :widget_name).html_safe %>');
 	<% else %>
 		var widgets = [];
 	<% end %>
