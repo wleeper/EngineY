@@ -3,6 +3,8 @@ While originally designed to be a social networking framework allowing users to 
 
 EngineY is implemented in Ruby on Rails and is easy to customize and deploy as your own powerful and feature packed social media site. Empower users with their own blogs. Enhance collaboration with forums, groups and events. Let your users post Twitter-like status messages. Track all the activity on your site with a live activity stream. Build a custom client to access all of your social data using EngineY's RESTful API. 
 
+== Rails 3
+This is the rails 3 version of EngineY.  It is still a work in progress
 
 == Installation
 
@@ -11,9 +13,12 @@ http://rmagick.rubyforge.org/install-faq.html
 Edit the config/database.yml file to configure a local database for use with EngineY.
 Run the following three commands in order:
 
+bundle install 
 rake db:create:all
 rake db:migrate
-rake enginey:db:ruby_mi_populate
+
+Optionally run one of the initializers.  Use rake -T to see them all
+rake enginey:db:rubymi_populate
 This will create the database with the correct schema and populate it with data for a sample site. This will allow you to run the application and have a look around. You will be able to login with the following id and password:
 User ID: admin
 Password: admin
