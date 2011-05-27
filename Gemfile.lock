@@ -132,6 +132,7 @@ GEM
     rake (0.8.7)
     rest-client (1.6.1)
       mime-types (>= 1.16)
+    rmagick (2.13.1)
     ruby-openid (2.1.8)
     ruby-openid-apps-discovery (1.2.0)
       ruby-openid (>= 2.1.7)
@@ -160,5 +161,6 @@ DEPENDENCIES
   omniauth
   rails (= 3.0.3)
   rake (~> 0.8.7)
+  rmagick
   ruby-openid
   will_paginate (= 3.0.pre2)
