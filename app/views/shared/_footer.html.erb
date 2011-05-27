@@ -15,10 +15,10 @@ limitations under the License.
 %>
 
 	<div id="copyright">
-		Copyright 2009 <%= link_to 'Timothy Fisher', 'http://blog.timothyfisher.com' %>
+		Copyright <%= Date.today.year %> <%= link_to 'Timothy Fisher', 'http://blog.timothyfisher.com' %>
 	</div>
 	<div id="foot_right">
 		<%= link_to 'Privacy', {:controller=>'home', :action=>'privacy'}, :id=>'privacy_link' %>
 		&nbsp;&nbsp;
-		<%= link_to 'Powered by EngineY', 'http://www.enginey.com' %>
+		<%= link_to image_tag('poweredby.png'), 'http://www.enginey.com' %>
 	</div>
