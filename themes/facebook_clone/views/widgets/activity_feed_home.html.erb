@@ -68,6 +68,6 @@ limitations under the License.
 
 <% content_for :module_footer do %>
 	<%= link_to 'View All', activities_path %>&nbsp;|&nbsp;
-	<%= link_to 'RSS', formatted_activities_url(:rss) %>
-	<%= link_to image_tag('feed.png', :alt=>'rss', :align=>'absmiddle'), formatted_activities_url(:rss) %>
+	<%= link_to 'RSS', activities_path(:format => :rss) %>
+	<%= link_to image_tag('feed.png', :alt=>'rss', :align=>'absmiddle'), activities_path(:format => :rss) %>
 <% end %>

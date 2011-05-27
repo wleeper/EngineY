@@ -22,7 +22,7 @@
 			})    
 			]  };  
 	var layout = [ view1 ];  
-	var url = '<%= formatted_data_set_rows_path @data_set, :json %>';  
+	var url = '<%= data_set_rows_path @data_set, :format => :json %>';  
 	var store = new dojox.data.JsonRestStore({target: url});
 </script>
 
